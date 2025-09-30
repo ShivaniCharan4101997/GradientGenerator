@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Layout wrapper for the art */
+.art-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* SVG styling */
+.art-wrapper svg {
+  width: 400px;
+  height: 200px;
+  stroke-width: 1.5;
+}
+
+/* Form styling */
+form {
+  margin-top: 4rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  /* padding: 2rem; */
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding:2rem;
+  background: #fafafa;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Grid-like form layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.col {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Form labels */
+.control-heading {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Range input */
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Select dropdown */
+select {
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 0.95rem;
+}
+
+/* Radio buttons */
+.radio-wrapper {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.radio-option input[type="radio"] {
+  accent-color: #444;
+  cursor: pointer;
+}
+
+.radio-option label {
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #333;
+}
