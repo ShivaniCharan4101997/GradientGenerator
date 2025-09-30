@@ -16,6 +16,12 @@ const GradientGenerator = () => {
     setColors(newColors);
   }
 
+  function getRandomColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+      .toString(16)
+      .padStart(6, "0")}`;
+  }
+
   return (
     <div className="wrapper">
       {/* Gradient Preview */}
@@ -55,7 +61,7 @@ const GradientGenerator = () => {
             <button
               type="button"
               className="add__color"
-              onClick={() => setColors([...colors, "#000000"])}
+              onClick={() => setColors([...colors, getRandomColor()])}
             >
               +
             </button>
